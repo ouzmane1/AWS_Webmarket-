@@ -54,12 +54,12 @@ Ce document organise la rédaction des livrables de l'examen AWS en 4 Milestones
 
 ## Statut Global
 
-- **Milestone 1** : ✅ Terminé
-- **Milestone 2** : ✅ Terminé
-- **Milestone 3** : ✅ Terminé
-- **Milestone 4** : ✅ Terminé
+- **Milestone 1** : Terminé
+- **Milestone 2** : Terminé
+- **Milestone 3** : Terminé
+- **Milestone 4** : Terminé
 
-**🎉 Projet 100% Terminé !**
+**Projet 100% Terminé**
 
 ---
 

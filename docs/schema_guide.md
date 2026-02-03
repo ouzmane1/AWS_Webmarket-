@@ -4,7 +4,7 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 
 ---
 
-## 📋 1. Liste des Composants AWS à Placer
+## 1. Liste des Composants AWS à Placer
 
 ### Composants Réseau
 - **Internet Gateway (IGW)** : Passerelle vers Internet
@@ -31,7 +31,7 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 
 ---
 
-## 🏗️ 2. Hiérarchie Visuelle (Structure en Poupées Russes)
+## 2. Hiérarchie Visuelle (Structure en Poupées Russes)
 
 ### Niveau 1 : Région AWS
 ```
@@ -69,28 +69,28 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 
 #### Dans Availability Zone A :
 1. **Public Subnet A** (10.0.1.0/24)
-   - Annotation : 🌐 Public
+   - Annotation : Public
    - Contient : ALB (partie A), NAT Gateway
    
 2. **Private Subnet App A** (10.0.10.0/24)
-   - Annotation : 🔒 Private
+   - Annotation : Private
    - Contient : EC2 Instance A
    
 3. **Private Subnet DB A** (10.0.20.0/24)
-   - Annotation : 🔒 Private - Isolated
+   - Annotation : Private - Isolated
    - Contient : RDS Primary
 
 #### Dans Availability Zone B :
 1. **Public Subnet B** (10.0.2.0/24)
-   - Annotation : 🌐 Public
+   - Annotation : Public
    - Contient : ALB (partie B)
    
 2. **Private Subnet App B** (10.0.11.0/24)
-   - Annotation : 🔒 Private
+   - Annotation : Private
    - Contient : EC2 Instance B
    
 3. **Private Subnet DB B** (10.0.21.0/24)
-   - Annotation : 🔒 Private - Isolated
+   - Annotation : Private - Isolated
    - Contient : RDS Standby
 
 ---
@@ -154,7 +154,7 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 
 ---
 
-## 🛡️ 4. Annotations de Sécurité à Ajouter
+## 4. Annotations de Sécurité à Ajouter
 
 ### Security Groups (Firewalls Virtuels)
 
@@ -245,7 +245,7 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 #### Annotation Globale sur les Subnets Privés
 Ajouter un cadre ou une étiquette :
 ```
-🔒 AUCUNE IP PUBLIQUE
+AUCUNE IP PUBLIQUE
 Les instances App et DB ne sont PAS accessibles depuis Internet
 ```
 
@@ -258,7 +258,7 @@ NAT Gateway
 
 ---
 
-## 📊 5. Légende du Schéma
+## 5. Légende du Schéma
 
 Placer en bas ou sur le côté du schéma :
 
@@ -266,12 +266,12 @@ Placer en bas ou sur le côté du schéma :
 ┌─────────────────────────────────────────────────────────────┐
 │ LÉGENDE                                                     │
 ├─────────────────────────────────────────────────────────────┤
-│ 🌐 Public Subnet    : Accessible depuis Internet           │
-│ 🔒 Private Subnet   : Aucune IP publique                   │
+│ Public Subnet      : Accessible depuis Internet           │
+│ Private Subnet     : Aucune IP publique                   │
 │ ──►                 : Flux entrant (utilisateur)           │
 │ ··►                 : Flux sortant (mises à jour)          │
 │ ═══►                : Réplication synchrone (Multi-AZ)     │
-│ 🛡️                  : Security Group (Firewall)            │
+│ SG                  : Security Group (Firewall)            │
 │ 👤                  : IAM Role                             │
 ├─────────────────────────────────────────────────────────────┤
 │ CODES COULEUR                                               │
@@ -286,7 +286,7 @@ Placer en bas ou sur le côté du schéma :
 
 ---
 
-## ✅ 6. Checklist de Validation Finale
+## 6. Checklist de Validation Finale
 
 Avant de considérer votre schéma comme terminé, vérifiez :
 
@@ -327,7 +327,7 @@ Avant de considérer votre schéma comme terminé, vérifiez :
 
 ---
 
-## 🎯 7. Conseils pour un Schéma Professionnel
+## 7. Conseils pour un Schéma Professionnel
 
 ### Outils Recommandés
 - **Diagrams.net (draw.io)** : Gratuit, bibliothèque AWS intégrée
@@ -354,7 +354,7 @@ Avant de considérer votre schéma comme terminé, vérifiez :
 
 ---
 
-## 📝 8. Exemple de Description à Joindre au Schéma
+## 8. Exemple de Description à Joindre au Schéma
 
 Accompagnez votre schéma d'une description courte :
 
@@ -364,4 +364,4 @@ Accompagnez votre schéma d'une description courte :
 
 ---
 
-**Avec ce guide, vous disposez de tous les éléments pour créer un schéma d'architecture AWS professionnel et conforme aux attentes de l'examen !** 🚀
+**Avec ce guide, vous disposez de tous les éléments pour créer un schéma d'architecture AWS professionnel et conforme aux attentes de l'examen !**
