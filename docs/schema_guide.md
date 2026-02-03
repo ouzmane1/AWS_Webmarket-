@@ -95,7 +95,7 @@ Ce guide vous accompagne étape par étape pour créer un schéma d'architecture
 
 ---
 
-## 🔄 3. Trajet Précis d'une Requête Utilisateur (Flux Numérotés)
+## 3. Trajet Précis d'une Requête Utilisateur (Flux Numérotés)
 
 ### Flux Entrant : De l'Utilisateur à la Base de Données
 
